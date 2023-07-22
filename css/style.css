@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+	margin:0 auto;
+	overflow-x: hidden;
+	font-family: 'Nunito'
+}
+#fondo_principal{
+    background-image: url("/img/fondo_portada.jpg");
+	width: 100%;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
