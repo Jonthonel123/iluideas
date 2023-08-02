@@ -8,12 +8,491 @@ body{
 	margin:0 auto;
 	overflow-x: hidden;
 	font-family: 'Nunito'
+
 }
+
 #fondo_principal{
     background-image: url("/img/fondo_portada.jpg");
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background-repeat: no-repeat;
-	background-position: center;
+	/* background-position: center; */
 	background-size: cover;
+}
+
+/* estilos para el menu y para el main principal */
+.main_principal{
+	position: relative;
+    width: 100%;
+}
+.navigarion{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    /* background-image: url("/img/fondo_menu_02.png"); */
+    background-color: white;
+    border-bottom-right-radius: 60%;
+    border-top-right-radius: 60%;
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.btn_arrow{
+    background-color: black;
+    border-radius: 50%;
+}
+.navigarion.active{
+    width: 60px;
+}
+.navigarion ul {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    margin: auto 0;
+}
+.navigarion ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigarion ul li:hover{
+    background: #03a9f4;
+}
+.navigarion ul li:nth-child(1){
+    margin-bottom: 20px;
+}
+.navigarion ul li:nth-child(1):hover{
+    background: transparent;
+}
+.navigarion ul li a{
+    position: relative;
+    width: 100%;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: #CCCCCC;
+}
+.navigarion ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigarion ul li a .icon .fa{
+    color: #fff;
+    font-size: 24px;
+}
+.navigarion ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+.main .topbar{
+    display: none;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+}
+.toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.toggle::before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #111;
+}
+
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin: -75px 0 0 0;
+    /* display: grid;
+    grid-gap:20px; */
+}
+
+.img-carrusel{
+    width: 60%;
+    height: 100vh;
+    margin: 0 auto;
+}
+.cardBox .card{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+/* nosotros */
+.cardBox-nosotros-arriba{
+    display: flex;
+    justify-content: center;
+}
+.nosotros-h1{
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea;
+    color:#ccc;
+    font-size: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.cardBox-nosotros-abajo{
+    display: flex;
+    justify-content: center;
+}
+.img-nosotros-uno{
+    display: flex;
+    align-items: end;
+}
+.img-nosotros-medio{
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -100px;
+    
+    
+}
+.nosotros-texto{
+    width: 40%;
+	/* background-color: #fff; */
+    /* box-shadow: 5px 10px 10px #eaeaea; */
+	font-size: 14px;
+    color:#ccc;
+	text-align: justify;
+    float: left;
+    position: relative;
+    /* padding: 20px 30px 30px 150px; */
+    margin-right: 50px;
+}
+.nosotros-derecha-texto-abajo{
+    width: 400px;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding: 20px 30px 30px 100px;
+}
+.img-nosotros-abajo-uno{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Portafolio */
+.img-portafolio-uno{
+    display: flex;
+    align-items: end;
+    
+}
+.img-portafolio-abajo-uno{
+    width: 50%;
+    /* background-color: #fafafa; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.img-portafolio-arriba-dere{
+    background-color: #fafafa;
+    padding: 0px 0px 60px 30px;
+    box-shadow: 5px 10px 10px #eaeaea;
+}
+
+.img-portafolio-uno-arriba{
+    display: flex;
+}
+.img-portafolio-uno-abajo{
+    display: flex;
+}
+.portafolio-abajo-izquierda{
+    width: 40%;	
+	font-size: 14px;
+    color:#ccc;
+	text-align: justify;
+    float: left;
+    position: relative;
+    /* padding: 20px 30px 30px 150px; */
+    /* margin-right: 50px; */
+}
+.portafolio-contenedor-img-der{
+    width: 430px;
+    background-color: #fafafa;
+    box-shadow: 5px 10px 10px #eaeaea;
+    /* padding-left: 116px; */
+    padding-top: 20px;
+}
+.portafolio-contenedor-img-izq{
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding-top: 20px;
+    padding-left: 65px;
+}
+.img-portafolio-izquierda-uno{
+    display: flex;
+}
+.img-portafolio-izquierda-dos{
+    display: flex;
+}
+/* conferencia */
+.img-conferencia-uno{
+    display: flex;
+    align-items: end;
+    /* background-color: #fafafa; */
+}
+.img-conferencia-abajo-uno{
+    width: 50%;
+    /* background-color: #fafafa; */
+    display: flex;
+    justify-content: end;
+}
+.portafolio-conferencia-img-der{
+    height: 210px;
+    /* background-color: #fafafa; */
+    box-shadow: 5px 10px 10px #eaeaea;
+}
+.img-conferencia-arriba-dere{
+    background-color: #fafafa;
+    /* padding: 0px 0px 60px 30px; */
+    box-shadow: 5px 10px 10px #eaeaea;
+}
+.caricatura2{
+	z-index: 1;
+	box-shadow: 5px 10px 10px #eaeaea;
+	max-width:270px;
+	height:210px;
+}
+.iluminacion{
+    max-width:270px;
+    height:210px
+}
+.caricatura3{
+	width: 410px;
+	height: 350px;
+	background-color: #fff;
+	box-shadow: 5px 10px 10px #eaeaea;
+}
+.conferencia-abajo-izquierda{
+    width: 40%;
+}
+.conferencia-contenedor-img-izq{
+    width: 400px;
+    height: 300px;
+}
+/* BLOG */
+.img-blog-arriba-dere{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: #f0efef;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding: 15px;
+}
+.blog-texto-grande{
+    width: 450px;
+    height: 400px;
+}
+/* contactanos */
+.contactanos-formulario{
+    width: 40%;
+	/* background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea; */
+	font-size: 14px;
+    color:#ccc;
+	text-align: justify;
+    float: left;
+    position: relative;
+    /* padding: 20px 30px 30px 150px;
+    margin-right: 50px; */
+}
+.formulario-contactanos-caja{
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding: 20px 30px 30px 100px;
+    margin-right: 50px;
+
+}
+
+/* cuadros infinitos */
+.derecha2{
+    width:215px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: derecha2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes derecha2{
+    0%   {background-color:#cccccc35; left:-350px; top:470px}
+    100%  {background-color:#cccccc35; left:2200px; top:470px}
+  }
+  .izquierda2{
+    width:210px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: izquierda2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes izquierda2{
+    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:2200px}
+    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:-350px}
+}
+.abajo{
+    width:34px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo{
+    0%   {background-color:#cccccc35; left:510px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
+  }
+  .abajo2{
+    width:34px;
+    height:182px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo2{
+    0%   {background-color:#cccccc35; left:1400px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
+  }
+  .arriba{
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+  }
+  .arriba2{
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba2;
+    animation-duration:12s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba2{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:1100px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
+  }
+
+/* Media querys para responsive */
+@media (max-width:992px){
+    .navigarion{
+        left: -300px;
+    }
+    .navigarion.active{
+        left: 0;
+        width: 300px;
+    }
+    .main{
+        width: 100%;
+        left: 0;
+    }
+    .main.active{
+        width: calc(100%-300px);
+        left: 300px;
+    }
+    .cardBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:768px){
+    .details{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .cardHeader h2{
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+@media (max-width:480px){
+    .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .details .recentOrders{
+        overflow-x: auto;
+    }
+    .details .recentOrders table{
+        width: 600px;
+    }
+    .navigarion{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigarion.active{
+        width: 100%;
+        left: 0;
+    }
+    .toggle.active{
+        position: fixed;
+        z-index: 10000;
+        right: 0;
+        left: initial;        
+    }
+    .toggle.active::before{
+        color: #fff;
+    }
+    .main,
+    .main.active{
+        width: 100%;
+        left: 0;
+    }
 }
