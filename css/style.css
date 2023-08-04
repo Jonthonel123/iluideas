@@ -19,6 +19,46 @@ body{
 	/* background-position: center; */
 	background-size: cover;
 }
+#fondo_principal-nosotros{
+    background-image: url("/img/Fondo_nosotros.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	/* background-position: center; */
+	background-size: cover;
+}
+#fondo_principal-portafolio{
+    background-image: url("/img/Fondo_portafolio.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	/* background-position: center; */
+	background-size: cover;
+}
+#fondo_principal-conferencia{
+    background-image: url("/img/fondo_conferencia.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	/* background-position: center; */
+	background-size: cover;
+}
+#fondo_principal-blog{
+    background-image: url("/img/Fondo-Blog.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	/* background-position: center; */
+	background-size: cover;
+}
+#fondo_principal-contactanos{
+    background-image: url("/img/fondo_contactanos.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	/* background-position: center; */
+	background-size: cover;
+}
 
 /* estilos para el menu y para el main principal */
 .main_principal{
@@ -37,6 +77,7 @@ body{
     overflow: hidden;
     display: flex;
     justify-content: center;
+    padding-top:160px;
 }
 .btn_arrow{
     background-color: black;
@@ -50,7 +91,7 @@ body{
     top: 0;
     left: 0; */
     width: 100%;
-    margin: auto 0;
+    /* margin: auto 0; */
 }
 .navigarion ul li {
     position: relative;
@@ -58,7 +99,15 @@ body{
     list-style: none;
 }
 .navigarion ul li:hover{
-    background: #03a9f4;
+    list-style: none;
+	background: url("/img/hover_10.png");
+	background-repeat: no-repeat;
+	width: 250px;
+	padding:0px 0px 0px 0;
+	margin: 0 0px 0 0;
+	/* float: right; */
+    right: 20px;
+	transition: left  2s;
 }
 .navigarion ul li:nth-child(1){
     margin-bottom: 20px;
@@ -113,6 +162,7 @@ body{
     padding: 0 10px;
 }
 .toggle{
+    display: none;
     position: relative;
     width: 60px;
     height: 60px;
@@ -358,8 +408,8 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes derecha2{
-    0%   {background-color:#cccccc35; left:-350px; top:470px}
-    100%  {background-color:#cccccc35; left:2200px; top:470px}
+    0%   {background-color:#cccccc35; left: 0px; top:470px}
+    100%  {background-color:#cccccc35; left:1700px; top:470px}
   }
   .izquierda2{
     width:210px;
@@ -372,8 +422,8 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes izquierda2{
-    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:2200px}
-    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:-350px}
+    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:1700px}
+    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
 }
 .abajo{
     width:34px;
@@ -433,6 +483,182 @@ body{
   }
 
 /* Media querys para responsive */
+@media(max-width:1400px) {
+   
+    /* animacion infinito */
+    .derecha2{
+        width:215px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: derecha2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes derecha2{
+        0%   {background-color:#cccccc35; left:0px; top:470px}
+        100%  {background-color:#cccccc35; left:950px; top:470px}
+      }
+      .izquierda2{
+        width:210px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: izquierda2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes izquierda2{
+        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
+        100%  {background-color:#cccccc35; top:300px; bottom:1400px;left:950px}
+    }
+    .abajo{
+        width:34px;
+        height:210px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo{
+        0%   {background-color:#cccccc35; left:410px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:410px; top:550px; bottom:0px }
+      }
+      .abajo2{
+        width:34px;
+        height:182px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo2{
+        0%   {background-color:#cccccc35; left:1200px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:1200px; top:550px; bottom:0px }
+      }
+      .arriba{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba{
+        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+      }
+      .arriba2{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba2{
+        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:900px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+      }
+}
+@media(max-width:1200px) {
+    
+    /* animacion infinito */
+    .derecha2{
+        width:215px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: derecha2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes derecha2{
+        0%   {background-color:#cccccc35; left:0px; top:470px}
+        100%  {background-color:#cccccc35; left:800px; top:470px}
+      }
+      .izquierda2{
+        width:210px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: izquierda2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes izquierda2{
+        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
+        100%  {background-color:#cccccc35; top:300px; bottom:400px;left:700px}
+    }
+    .abajo{
+        width:34px;
+        height:210px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo{
+        0%   {background-color:#cccccc35; left:310px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:310px; top:550px; bottom:0px }
+      }
+      .abajo2{
+        width:34px;
+        height:182px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo2{
+        0%   {background-color:#cccccc35; left:800px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:800px; top:550px; bottom:0px }
+      }
+      .arriba{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba{
+        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+      }
+      .arriba2{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba2{
+        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:900px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+      }
+}
 @media (max-width:992px){
     .navigarion{
         left: -300px;
