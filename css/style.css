@@ -13,51 +13,48 @@ body{
 
 #fondo_principal{
     background-image: url("/img/fondo_portada.jpg");
-	width: 100%;
-	height: 100%;
+	/* width: 100%; */
+	height: 100vh;
 	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 	/* background-position: center; */
-	background-size: cover;
+	/* background-size: cover; */
 }
 #fondo_principal-nosotros{
     background-image: url("/img/Fondo_nosotros.jpg");
-	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-repeat: no-repeat;
-	/* background-position: center; */
-	background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 #fondo_principal-portafolio{
     background-image: url("/img/Fondo_portafolio.jpg");
-	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-repeat: no-repeat;
-	/* background-position: center; */
-	background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 #fondo_principal-conferencia{
     background-image: url("/img/fondo_conferencia.jpg");
-	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-repeat: no-repeat;
-	/* background-position: center; */
-	background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 #fondo_principal-blog{
     background-image: url("/img/Fondo-Blog.jpg");
-	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-repeat: no-repeat;
-	/* background-position: center; */
-	background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 #fondo_principal-contactanos{
     background-image: url("/img/fondo_contactanos.jpg");
-	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-repeat: no-repeat;
-	/* background-position: center; */
-	background-size: cover;
+    background-size: cover;
+    background-position: center center;
 }
 
 /* estilos para el menu y para el main principal */
@@ -67,24 +64,26 @@ body{
 }
 .navigarion{
     position: fixed;
-    width: 300px;
+    /* width: 300px; */
     height: 100%;
-    /* background-image: url("/img/fondo_menu_02.png"); */
-    background-color: white;
-    border-bottom-right-radius: 60%;
-    border-top-right-radius: 60%;
+    background-image: url("/img/fondo_menu_800.png");
+    /* background-color: white; */
+    /* border-bottom-right-radius: 60%;
+    border-top-right-radius: 60%; */
     transition: 0.5s;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    padding-top:160px;
+    padding-top: 200px;
+    /* justify-content: center; */
+    
+    flex-direction: column;
 }
 .btn_arrow{
     background-color: black;
     border-radius: 50%;
 }
 .navigarion.active{
-    width: 60px;
+    width: 100px;
 }
 .navigarion ul {
     /* position: absolute;
@@ -102,19 +101,19 @@ body{
     list-style: none;
 	background: url("/img/hover_10.png");
 	background-repeat: no-repeat;
-	width: 250px;
+	/* width: 250px; */
 	padding:0px 0px 0px 0;
 	margin: 0 0px 0 0;
 	/* float: right; */
     right: 20px;
 	transition: left  2s;
 }
-.navigarion ul li:nth-child(1){
+/* .navigarion ul li:nth-child(1){
     margin-bottom: 20px;
-}
-.navigarion ul li:nth-child(1):hover{
+} */
+/* .navigarion ul li:nth-child(1):hover{
     background: transparent;
-}
+} */
 .navigarion ul li a{
     position: relative;
     width: 100%;
@@ -144,29 +143,35 @@ body{
     white-space: nowrap;
 }
 .main{
-    position: absolute;
-    width: calc(100% - 300px);
-    left: 300px;
+    /* position: absolute;
+    width: calc(100% - 100px);
+    left: 200px; */
     /* min-height: 100vh; */
+    width: 900px;
     margin: 0 auto;
     transition: 0.5s;
 }
-.main.active{
+/* .main-index{
+    width: calc(100% - 200px);
+    left: 200px;
+    margin-left: 200px;
+} */
+/* .main.active{
     width: calc(100% - 60px);
     left: 60px;
-}
-.main .topbar{
+} */
+.topbar{
     display: none;
     width: 100%;
     height: 60px;
-    padding: 0 10px;
+    padding-bottom:160px;
 }
 .toggle{
-    display: none;
+    /* display: none; */
     position: relative;
     width: 60px;
     height: 60px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .toggle::before{
     content: '\f0c9';
@@ -177,21 +182,21 @@ body{
     line-height: 60px;
     font-size: 24px;
     text-align: center;
-    color: #111;
+    color: #fff;
 }
 
 .cardBox{
     position: relative;
     width: 100%;
     padding: 20px;
-    margin: -75px 0 0 0;
+    margin: 0 0 0 100px;
     /* display: grid;
     grid-gap:20px; */
 }
 
 .img-carrusel{
     width: 60%;
-    height: 100vh;
+    height: 80vh;
     margin: 0 auto;
 }
 .cardBox .card{
@@ -207,8 +212,8 @@ body{
     justify-content: center;
 }
 .nosotros-h1{
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
     background-color: #fff;
     box-shadow: 5px 10px 10px #eaeaea;
     color:#ccc;
@@ -229,7 +234,7 @@ body{
 .img-nosotros-medio{
     position: absolute;
     margin: 0 auto;
-    width: 100%;
+    width: 900px;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -278,7 +283,9 @@ body{
     padding: 0px 0px 60px 30px;
     box-shadow: 5px 10px 10px #eaeaea;
 }
-
+.portafolio-img-derecha{
+    display: flex;
+}
 .img-portafolio-uno-arriba{
     display: flex;
 }
@@ -399,7 +406,7 @@ body{
 /* cuadros infinitos */
 .derecha2{
     width:215px;
-    height:34px;
+    height:18px;
     background-color:#FFFFFF20;
     position: absolute;
     z-index: 1;
@@ -411,9 +418,13 @@ body{
     0%   {background-color:#cccccc35; left: 0px; top:470px}
     100%  {background-color:#cccccc35; left:1700px; top:470px}
   }
+  .derecha2 img{
+    width: 215px;
+    height: 20px;
+  }
   .izquierda2{
     width:210px;
-    height:34px;
+    height:18px;
     background-color:#FFFFFF20;
     position: absolute;
     z-index: 1;
@@ -425,23 +436,32 @@ body{
     0%   {background-color:#cccccc35; top:600px; bottom:0px;left:1700px}
     100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
 }
+.izquierda2 img{
+    width: 215px;
+    height: 20px;
+}
 .abajo{
-    width:34px;
+    width:20px;
     height:210px;
     background-color:#FFFFFF20;
     position: absolute;
     z-index: 1;
     animation-name: abajo;
-    animation-duration:7s;
+    animation-duration:9s;
     animation-iteration-count: infinite
   }
+  
   @keyframes abajo{
     0%   {background-color:#cccccc35; left:510px; top:0px; bottom:0px}
     100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
   }
+  .abajo img{
+    width: 18px;
+    height: 210px;
+  }
   .abajo2{
-    width:34px;
-    height:182px;
+    width:20px;
+    height:210px;
     background-color:#FFFFFF20;
     position: absolute;
     z-index: 1;
@@ -453,9 +473,13 @@ body{
     0%   {background-color:#cccccc35; left:1400px; top:0px; bottom:0px}
     100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
   }
+  .abajo2 img{
+    width: 18px;
+    height: 210px;
+  }
   .arriba{
-    width:34px;
-    height:195px;
+    width:20px;
+    height:210px;
     background-color:#FFFFFF20;
     position: absolute;
     z-index: 1;
@@ -467,9 +491,13 @@ body{
     0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
     100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
   }
+  .arriba img{
+    width: 18px;
+    height: 210px;
+  }
   .arriba2{
-    width:34px;
-    height:195px;
+    width:20px;
+    height:210px;
     background-color:#FFFFFF20;
     position: absolute;
     z-index: 1;
@@ -481,8 +509,99 @@ body{
     0%   {background-color:#cccccc35; top:550px; bottom:0px;left:1100px}
     100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
   }
+  .arriba2 img{
+    width: 18px;
+    height: 210px;
+  }
 
 /* Media querys para responsive */
+@media(max-width:1500px){
+    /* animacion infinito */
+    .derecha2{
+        width:215px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: derecha2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes derecha2{
+        0%   {background-color:#cccccc35; left:0px; top:470px}
+        100%  {background-color:#cccccc35; left:950px; top:470px}
+      }
+      .izquierda2{
+        width:210px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: izquierda2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes izquierda2{
+        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
+        100%  {background-color:#cccccc35; top:300px; bottom:1400px;left:950px}
+    }
+    .abajo{
+        width:34px;
+        height:210px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo{
+        0%   {background-color:#cccccc35; left:410px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:410px; top:410px; bottom:0px }
+      }
+      .abajo2{
+        width:34px;
+        height:182px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo2{
+        0%   {background-color:#cccccc35; left:1200px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:1200px; top:410px; bottom:0px }
+      }
+      .arriba{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+      }
+      .arriba2{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba2{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+      }
+}
 @media(max-width:1400px) {
    
     /* animacion infinito */
@@ -526,7 +645,7 @@ body{
       }
       @keyframes abajo{
         0%   {background-color:#cccccc35; left:410px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:410px; top:550px; bottom:0px }
+        100%  {background-color:#cccccc35; left:410px; top:410px; bottom:0px }
       }
       .abajo2{
         width:34px;
@@ -540,7 +659,7 @@ body{
       }
       @keyframes abajo2{
         0%   {background-color:#cccccc35; left:1200px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:1200px; top:550px; bottom:0px }
+        100%  {background-color:#cccccc35; left:1200px; top:410px; bottom:0px }
       }
       .arriba{
         width:34px;
@@ -553,7 +672,7 @@ body{
         animation-iteration-count: infinite
       }
       @keyframes arriba{
-        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
         100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
       }
       .arriba2{
@@ -567,7 +686,7 @@ body{
         animation-iteration-count: infinite
       }
       @keyframes arriba2{
-        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:900px}
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
         100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
       }
 }
@@ -614,7 +733,7 @@ body{
       }
       @keyframes abajo{
         0%   {background-color:#cccccc35; left:310px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:310px; top:550px; bottom:0px }
+        100%  {background-color:#cccccc35; left:310px; top:410px; bottom:0px }
       }
       .abajo2{
         width:34px;
@@ -628,7 +747,7 @@ body{
       }
       @keyframes abajo2{
         0%   {background-color:#cccccc35; left:800px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:800px; top:550px; bottom:0px }
+        100%  {background-color:#cccccc35; left:800px; top:410px; bottom:0px }
       }
       .arriba{
         width:34px;
@@ -641,7 +760,7 @@ body{
         animation-iteration-count: infinite
       }
       @keyframes arriba{
-        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
         100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
       }
       .arriba2{
@@ -655,48 +774,332 @@ body{
         animation-iteration-count: infinite
       }
       @keyframes arriba2{
-        0%   {background-color:#cccccc35; top:550px; bottom:0px;left:900px}
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
         100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
       }
 }
 @media (max-width:992px){
-    .navigarion{
-        left: -300px;
+   /* cuadros infinitos */
+.derecha2{
+    display: none;
+    width:215px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: derecha2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes derecha2{
+    0%   {background-color:#cccccc35; left: 0px; top:470px}
+    100%  {background-color:#cccccc35; left:1700px; top:470px}
+  }
+  .izquierda2{
+    display: none;
+    width:210px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: izquierda2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes izquierda2{
+    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:1700px}
+    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
+}
+.abajo{
+    display: none;
+    width:34px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo{
+    0%   {background-color:#cccccc35; left:510px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
+  }
+  .abajo2{
+    display: none;
+    width:34px;
+    height:182px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo2{
+    0%   {background-color:#cccccc35; left:1400px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
+  }
+  .arriba{
+    display: none;
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+  }
+  .arriba2{
+    display: none;
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba2;
+    animation-duration:12s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba2{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:1100px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
+  }
+  .img-carrusel{
+    height: 400px;
+}
+/* .cardBox{
+    margin: 0px;
+} */
+    .topbar{
+        /* display: none; */
+        width: 100%;
+        height: 60px;
+        padding: 0 10px;
+        padding-bottom:160px;
     }
-    .navigarion.active{
-        left: 0;
-        width: 300px;
+    .toggle{
+        /* display: none; */
+        position: relative;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        font-size: 24px;
+        text-align: center;
+        color: #CCCCCC;
+    }
+    .navigarion{
+        width: 100px;
+        height: 600px;
+        padding-top: 100px;
     }
     .main{
-        width: 100%;
-        left: 0;
+        width: 600px;
+        /* margin-left: 100px; */
     }
-    .main.active{
-        width: calc(100%-300px);
-        left: 300px;
+    .img-nosotros-medio{
+        width: 600px;
     }
     .cardBox{
         grid-template-columns: repeat(2,1fr);
+        margin: 0;
+    }
+    /* NOSOTROS */
+    .nosotros-h1{
+        width: 200px;
+        height: 180px;
+        font-size: 30px;
+    }
+    .img-nosotros-uno img{
+        width: 150px;
+        height: 110px;
+    }
+    .img-nosotros-medio{
+        width: 550px;
+        margin-top: -75px;
+    }
+    .img-nosotros-medio img{
+        width: 150px;
+    }
+    .img-nosotros-abajo-uno .iluminacion{
+        max-width: 200px;
+        height: 170px;
+    }
+    /* PORTAFOLIO */
+    .img-portafolio-arriba-dere{
+        padding: 0px 0px 15px 15px;
+    }
+    .portafolio-contenedor-img-der{
+        width: 260px;
+    }
+    .img-portafolio-uno-arriba a img {
+        width: 110px;
+    }
+    .img-portafolio-uno-abajo a img {
+        width: 110px;
+    }
+    .portafolio-contenedor-img-izq{
+        width: 295px;
+    height: 210px;
+    padding-left: 30px;
+    }
+    .img-portafolio-izquierda-uno a img {
+        width: 110px;
+    }
+    .img-portafolio-izquierda-dos a img {
+        width: 110px;
+    }
+    /* CONFERENCIA */
+    .caricatura2{
+        max-width: 200px;
+        height: 150px;
+    }
+    .portafolio-conferencia-img-der {
+
+        height: 200px;        
+        /* padding: 30px 45px 0 0; */
+    }
+    .iluminacion{
+        max-width: 200px;
+        height: 150px;
+    }
+    .caricatura3{
+        width: 300px;
+        height: 260px;
+    }
+    /* BLOG */
+    .img-blog-arriba-dere{
+        width: 253px;
+        height: 158px;
+        font-size: 12px;
+    }
+    .img-conferencia-abajo-uno .img-blog-arriba-dere{
+        width: 300px;
+        height: 200px;
+        font-size: 12px;
+    }
+    .blog-texto-grande{
+        width: 300px;
+        height: 352px;
+        font-size: 12px;
+    }
+    .formulario-contactanos-caja{
+        width: 330px;
+        padding: 20px 30px 30px 60px;
+    }
+    /* CONTACTANOS */
+    .formulario-contactanos-caja {
+        width: 260px;
+        padding: 52px 30px 30px 60px;
     }
 }
 @media (max-width:768px){
-    .details{
-        grid-template-columns: repeat(1,1fr);
+    .img-carrusel{
+        height: 400px;
     }
-    .cardHeader h2{
-        font-weight: 600;
-        font-size: 18px;
+    .cardBox{
+        margin: 0px;
+    }
+    .main{
+        width: 400px;
+    }
+    /* NOSOTROS */
+    .img-nosotros-abajo-uno .iluminacion{
+        max-width: 140px;
+        height: 130px;
+    }
+    .nosotros-derecha-texto-abajo{
+        width: 250px;
+        padding: 50px 20px 20px 20px;
+        font-size: 12px;
+    }
+    /* PORTAFOLIO */
+    .cardBox-nosotros-arriba {
+        align-items: end;
+    }
+    .portafolio-img-derecha{
+        display: block;
+        padding: 0 0 0 70px;
+    }
+    .portafolio-contenedor-img-der {
+        width: 200px;
+    }
+    .img-portafolio-uno-arriba{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .img-portafolio-uno-abajo{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .portafolio-contenedor-img-izq {
+        width: 200px;
+        height: 350px;
+    }
+    .img-portafolio-izquierda-uno {
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .img-portafolio-izquierda-dos{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .portafolio-img-derecha div img{
+        width: 100px;
+    }
+    /* CONFERENCIA */
+    .caricatura2{
+        max-width: 150px;
+        height: 130px;
+    
+    }
+    .portafolio-conferencia-img-der{
+        /* padding: 24px 0px 0 0; */
+        height: 150px;
+    }
+    .conferencia-contenedor-img-izq{
+        width: 200px;
+        height: 200px;
+    }
+    .caricatura3 {
+        width: 230px;
+        height: 200px;
+    }
+    .img-nosotros-medio{
+        width: 440px;
     }
 }
 @media (max-width:480px){
-    .cardBox{
+    /* .cardBox{
         grid-template-columns: repeat(1,1fr);
+    } */
+    .main{
+        width: 350px;
+        height: 100%;
+        margin-top: -60px;
     }
-    .details .recentOrders{
-        overflow-x: auto;
-    }
-    .details .recentOrders table{
-        width: 600px;
+    .topbar{
+        display: block;
+        width: 100%;
+        padding: 0;
+
     }
     .navigarion{
         width: 100%;
@@ -704,8 +1107,10 @@ body{
         z-index: 1000;
     }
     .navigarion.active{
-        width: 100%;
-        left: 0;
+        width: 25%;
+        left: -25px;
+        background-image: none
+        
     }
     .toggle.active{
         position: fixed;
@@ -714,11 +1119,183 @@ body{
         left: initial;        
     }
     .toggle.active::before{
-        color: #fff;
+        color: #ccc;
     }
-    .main,
-    .main.active{
+    /* NOSOTROS */
+    .cardBox-nosotros-arriba{
+        display: grid;
+        width: 350px;
+        justify-content: center;
+    }
+    .img-nosotros-medio{
+        width: 350px;
+        position: static;
+        margin: 0;
+    }
+    .cardBox-nosotros-abajo{
+        flex-direction: column;
+        width: 350px;
+        /* height: 420px; */
+        justify-content: center;
+    }
+    .img-nosotros-abajo-uno {
         width: 100%;
-        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .nosotros-texto {
+        width: 200px;
+        height: 100%;
+        font-size: 14px;
+        color: #ccc;
+        display: flex;
+        margin: 0 auto;
+    }
+    .nosotros-derecha-texto-abajo{
+        width: 200px;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+        font-size: 12px;
+    }
+    .img-nosotros-uno{
+        display: flex;
+        justify-content: center;
+    }
+    .img-nosotros-uno img{
+        width: 200px;
+        height: 150px;
+    
+    }
+    .img-nosotros-medio img {
+        width: 200px;
+    }
+    .img-nosotros-abajo-uno .iluminacion {
+        max-width: 200px;
+        height: 150px;
+    }
+    #fondo_principal-nosotros{
+        height: 100%;
+    }
+    /* PORTAFOLIO */
+    #fondo_principal-portafolio{
+        height: 100%;
+    }
+    .portafolio-img-derecha div img {
+        width: 200px;
+    }
+    .portafolio-img-derecha {
+        display: block;
+        padding: 0;
+    }
+    .img-portafolio-izquierda-uno-dos{
+        flex-direction: column;
+    }
+    .cardBox-nosotros-abajo{
+        align-items: center;
+    }
+    .img-portafolio-abajo-uno {
+        width: 100%;
+        /* background-color: #fafafa; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portafolio-contenedor-img-izq {
+        width: 200px;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portafolio-abajo-izquierda{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* .img-portafolio-uno-arriba a img {
+        width: 200px;
+    } */
+    /* CONFERENCIA */
+    .caricatura2 {
+        max-width: 200px;
+        height: 130px;
+    }
+    .img-conferencia-uno {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .conferencia-abajo-izquierda {
+        width: 100%;
+        height: 100%;
+    }
+    .conferencia-contenedor-img-izq {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .img-portafolio-izquierda-uno {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .caricatura3 {
+        width: 200px;
+        height: 160px;
+    }
+    #fondo_principal-conferencia{
+        height: 100%;
+    }
+    .portafolio-conferencia-img-der {
+        width: 200px;
+        height: 150px;
+    }
+    .img-conferencia-abajo-uno {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-conferencia-arriba-dere{
+        width: 200px;
+        background-color: #fff;
+    }
+    /* BLOG */
+    .img-conferencia-abajo-uno .img-blog-arriba-dere {
+        width: 200px;
+        height: 100%;
+        font-size: 12px;
+        padding: 5px !important;
+    }
+    .blog-texto-grande {
+        width: 200px;
+        height: 100%;
+        font-size: 12px;
+        padding: 5px !important;
+    }
+    .blog-contenedor-img-izq {
+        width: 200px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .blog-abajo-izquierda{
+        width: 100%;
+        height: 100%;
+    }
+    /* CONTACTANOS */
+    .formulario-contactanos-caja{
+        width: 200px;
+        padding: 15px;
+        margin: 0;
+    }
+    .contactanos-formulario{
+        width: 100%;
+        /* height: 450px; */
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    #fondo_principal-contactanos{
+        height: 100%;
     }
 }

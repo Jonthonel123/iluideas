@@ -32,62 +32,76 @@
         <div class="arriba"><img src="img/direccion_arriba.png" alt="" /></div>
         <div class="arriba2"><img src="img/direccion_arriba.png" alt="" /></div>
         <div class="main_principal">
+          <div class="topbar">
+            <div class="toggle" onclick="toggleMenu();"></div>
+          </div>
           <div class="navigarion">
-            <ul>
-              <li>
-                <div class="topbar">
-                  <div class="toggle" onclick="toggleMenu();"></div>
-                </div>
-              </li>
-              <li>
-                <a href="./index.html">
-                  <span class="icon"
-                    ><i class="fa-solid fa-house-chimney"></i
-                  ></span>
-                  <span class="title">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="./nosotros.html">
-                  <span class="icon"><i class="fa-solid fa-users"></i></span>
-                  <span class="title">Nosotros</span>
-                </a>
-              </li>
-              <li>
-                <a href="./portafolio.html">
-                  <span class="icon"><i class="fa-solid fa-message"></i></span>
-                  <span class="title">Portafolio</span>
-                </a>
-              </li>
-              <li>
-                <a href="./conferencia.html">
-                  <span class="icon"
-                    ><i class="fa-solid fa-circle-question"></i
-                  ></span>
-                  <span class="title">Conferencia</span>
-                </a>
-              </li>
-              <li>
-                <a href="./blog.html">
-                  <span class="icon"><i class="fa-solid fa-gear"></i></span>
-                  <span class="title">Blog</span>
-                </a>
-              </li>
-              <li>
-                <a href="/contactanos.html">
-                  <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                  <span class="title">Contáctanos</span>
-                </a>
-              </li>
-            </ul>
+            <div>
+              <ul>
+                <li>
+                  <a href="./index.html">
+                    <span class="icon">
+                      <!-- <i class="fa-solid fa-house-chimney"></i> -->
+                      <img src="img/menu_principal_07.png" alt="" />
+                    </span>
+                    <span class="title">Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./nosotros.html">
+                    <span class="icon">
+                      <!-- <i class="fa-solid fa-users"></i> -->
+                      <img src="img/menu_principal_10.png" alt="Nosotros" />
+                    </span>
+                    <span class="title">Nosotros</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./portafolio.html">
+                    <span class="icon">
+                      <!-- <i class="fa-solid fa-message"></i> -->
+                      <img src="img/menu_principal_12.png" alt="Portafolio" />
+                    </span>
+                    <span class="title">Portafolio</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./conferencia.html">
+                    <span class="icon">
+                      <!-- <i class="fa-solid fa-circle-question"></i> -->
+                      <img src="img/menu_principal_14.png" alt="Conferencia" />
+                    </span>
+                    <span class="title">Conferencia</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="./blog.html">
+                    <span class="icon">
+                      <!-- <i class="fa-solid fa-gear"></i> -->
+                      <img src="img/menu_principal_16.png" alt="Blog" />
+                    </span>
+                    <span class="title">Blog</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/contactanos.html">
+                    <span class="icon">
+                      <!-- <i class="fa-solid fa-lock"></i> -->
+                      <img src="img/menu_principal_18.png" alt="Contáctanos" />
+                    </span>
+                    <span class="title">Contáctanos</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="main">
             <header>
               <div class="text-center logotipo p-2">
                 <a href="#"
                   ><img
-                    width="90"
-                    height="100"
+                    width="60"
+                    height="70"
                     src="img/logotipo.png"
                     alt="Iluideas"
                 /></a>
@@ -96,15 +110,27 @@
             <div class="cardBox-nosotros-arriba">
               <div class="nosotros-h1">Portafolio</div>
               <div class="img-portafolio-uno">
-                <div class="img-portafolio-arriba-dere">
-                  <img
-                    class=""
-                    src="img/portafolio_10.png"
-                    alt="ojo creativo"
-                    width="150px"
-                    style="padding-left: 20px"
-                  />
-                  <img src="img/portafolio_12.png" alt="mind" width="150px" />
+                <div class="img-portafolio-arriba-dere portafolio-img-derecha">
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#Modal1"
+                    style="cursor: pointer"
+                  >
+                    <img
+                      class=""
+                      src="img/portafolio_10.png"
+                      alt="ojo creativo"
+                      width="150px"
+                      style="padding-left: 20px"
+                    />
+                  </div>
+                  <div
+                    data-bs-toggle="modal"
+                    data-bs-target="#Modal2"
+                    style="cursor: pointer"
+                  >
+                    <img src="img/portafolio_12.png" alt="mind" width="150px" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,13 +147,19 @@
               <div class="img-portafolio-abajo-uno">
                 <div class="portafolio-contenedor-img-der">
                   <div class="img-portafolio-uno-arriba">
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal3"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_28.png"
                         alt="chocotec"
                         width="150px"
                     /></a>
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal4"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_29.png"
                         alt="expreso"
@@ -135,13 +167,19 @@
                     /></a>
                   </div>
                   <div class="img-portafolio-uno-abajo">
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal5"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_34.png"
                         alt="inkuy"
                         width="150px"
                     /></a>
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal6"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_35.png"
                         alt="activados"
@@ -152,14 +190,22 @@
               </div>
               <div class="portafolio-abajo-izquierda">
                 <div class="portafolio-contenedor-img-izq">
-                  <div class="img-portafolio-izquierda-uno">
-                    <a href="#"
+                  <div
+                    class="img-portafolio-izquierda-uno img-portafolio-izquierda-uno-dos"
+                  >
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal7"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_31.png"
                         alt="Mind"
                         width="150px"
                     /></a>
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal8"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_32.png"
                         alt="Vanika"
@@ -167,13 +213,19 @@
                     /></a>
                   </div>
                   <div class="img-portafolio-izquierda-dos">
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal9"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_36.png"
                         alt="chocotec"
                         width="150px"
                     /></a>
-                    <a href="#"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#Modal10"
+                      style="cursor: pointer"
                       ><img
                         src="img/portafolio_37.png"
                         alt="clarita"
@@ -184,6 +236,880 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 1-->
+    <div
+      class="modal fade"
+      id="Modal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">MIND</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button> -->
+                <!-- <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/image/mind.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <!-- <div class="carousel-item">
+                <img src="/image/mind.png" class="d-block w-100" alt="..." />
+              </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            cerrar
+          </button>
+          <button type="button" class="btn btn-primary">guardar</button>
+        </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2-->
+    <div
+      class="modal fade"
+      id="Modal2"
+      tabindex="-1"
+      aria-labelledby=""
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">MIND</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/image/mind.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3-->
+    <div
+      class="modal fade"
+      id="Modal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">CHOCOTEC</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button> -->
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/image/chocotec.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4-->
+    <div
+      class="modal fade"
+      id="Modal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">EXPRESO</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/image/expreso.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 5-->
+    <div
+      class="modal fade"
+      id="Modal5"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">INKUY</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/image/inkuy.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 6-->
+    <div
+      class="modal fade"
+      id="Modal6"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">ACTIVADOS</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/image/activados.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 7-->
+    <div
+      class="modal fade"
+      id="Modal7"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">MIND</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 8-->
+    <div
+      class="modal fade"
+      id="Modal8"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">VANIKA</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/image/vanika.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 9-->
+    <div
+      class="modal fade"
+      id="Modal9"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">CHOCOTEC BAKES</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/image/chocotecbakes.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Modal 10-->
+    <div
+      class="modal fade"
+      id="Modal10"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title fs-5" id="">CLARITA</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- CARRUCEL -->
+            <div id="" class="carousel slide">
+              <div class="carousel-indicators bg-dark">
+                <!-- <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button> -->
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/image/clarita.png"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <!-- <div class="carousel-item">
+                  <img src="/image/mind.png" class="d-block w-100" alt="..." />
+                </div> -->
+              </div>
+              <!-- <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              cerrar
+            </button>
+            <button type="button" class="btn btn-primary">guardar</button>
+          </div> -->
         </div>
       </div>
     </div>
