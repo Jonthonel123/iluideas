@@ -781,7 +781,6 @@ body{
 @media (max-width:992px){
    /* cuadros infinitos */
 .derecha2{
-    display: none;
     width:215px;
     height:34px;
     background-color:#FFFFFF20;
@@ -792,11 +791,10 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes derecha2{
-    0%   {background-color:#cccccc35; left: 0px; top:470px}
-    100%  {background-color:#cccccc35; left:1700px; top:470px}
+    0%   {background-color:#cccccc35; left: 0px; top:210px}
+    100%  {background-color:#cccccc35; left:680px; top:210px}
   }
   .izquierda2{
-    display: none;
     width:210px;
     height:34px;
     background-color:#FFFFFF20;
@@ -807,11 +805,10 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes izquierda2{
-    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:1700px}
-    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:700px}
+    100%  {background-color:#cccccc35; top:550px; bottom:0px;left:0px}
 }
 .abajo{
-    display: none;
     width:34px;
     height:210px;
     background-color:#FFFFFF20;
@@ -822,11 +819,10 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes abajo{
-    0%   {background-color:#cccccc35; left:510px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
+    0%   {background-color:#cccccc35; left:210px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:210px; top:400px; bottom:0px }
   }
   .abajo2{
-    display: none;
     width:34px;
     height:182px;
     background-color:#FFFFFF20;
@@ -837,11 +833,10 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes abajo2{
-    0%   {background-color:#cccccc35; left:1400px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
+    0%   {background-color:#cccccc35; left:600px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:600px; top:400px; bottom:0px }
   }
   .arriba{
-    display: none;
     width:34px;
     height:195px;
     background-color:#FFFFFF20;
@@ -852,11 +847,10 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes arriba{
-    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:380px}
     100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
   }
   .arriba2{
-    display: none;
     width:34px;
     height:195px;
     background-color:#FFFFFF20;
@@ -867,9 +861,12 @@ body{
     animation-iteration-count: infinite
   }
   @keyframes arriba2{
-    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:1100px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
+    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:700px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:700px}
   }
+
+
+
   .img-carrusel{
     height: 400px;
 }
@@ -1007,6 +1004,93 @@ body{
     }
 }
 @media (max-width:768px){
+   /* cuadros infinitos */
+   .derecha2{
+    width:215px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: derecha2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes derecha2{
+    0%   {background-color:#cccccc35; left: 0px; top:210px}
+    100%  {background-color:#cccccc35; left:400px; top:210px}
+  }
+  .izquierda2{
+    width:210px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: izquierda2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes izquierda2{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:400px}
+    100%  {background-color:#cccccc35; top:550px; bottom:0px;left:0px}
+}
+.abajo{
+    width:34px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo{
+    0%   {background-color:#cccccc35; left:210px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:210px; top:400px; bottom:0px }
+  }
+  .abajo2{
+    width:34px;
+    height:182px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo2{
+    0%   {background-color:#cccccc35; left:500px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:500px; top:400px; bottom:0px }
+  }
+  .arriba{
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba{
+    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:380px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+  }
+  .arriba2{
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba2;
+    animation-duration:12s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba2{
+    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:500px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:500px}
+  }
+/* fin */
+
     .img-carrusel{
         height: 400px;
     }
@@ -1087,6 +1171,92 @@ body{
     }
 }
 @media (max-width:480px){
+     /* cuadros infinitos */
+   .derecha2{
+    width:215px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: derecha2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes derecha2{
+    0%   {background-color:#cccccc35; left: 0px; top:210px}
+    100%  {background-color:#cccccc35; left:170px; top:210px}
+  }
+  .izquierda2{
+    width:210px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: izquierda2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes izquierda2{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:170px}
+    100%  {background-color:#cccccc35; top:550px; bottom:0px;left:0px}
+}
+.abajo{
+    width:34px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo{
+    0%   {background-color:#cccccc35; left:80px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:80px; top:800px; bottom:0px }
+  }
+  .abajo2{
+    width:34px;
+    height:182px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo2{
+    0%   {background-color:#cccccc35; left:300px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:300px; top:800px; bottom:0px }
+  }
+  .arriba{
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba{
+    0%   {background-color:#cccccc35; top:800px; bottom:0px;left:200px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:200px}
+  }
+  .arriba2{
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba2;
+    animation-duration:12s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba2{
+    0%   {background-color:#cccccc35; top:800px; bottom:0px;left:360px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:360px}
+  }
+/* fin */
     /* .cardBox{
         grid-template-columns: repeat(1,1fr);
     } */
