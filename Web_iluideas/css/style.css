@@ -1,0 +1,1301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+	margin:0 auto;
+	overflow-x: hidden;
+	font-family: 'Nunito'
+
+}
+
+#fondo_principal{
+    background-image: url("/img/fondo_portada.jpg");
+	/* width: 100%; */
+	height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+	/* background-position: center; */
+	/* background-size: cover; */
+}
+#fondo_principal-nosotros{
+    background-image: url("/img/Fondo_nosotros.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#fondo_principal-portafolio{
+    background-image: url("/img/Fondo_portafolio.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#fondo_principal-conferencia{
+    background-image: url("/img/fondo_conferencia.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#fondo_principal-blog{
+    background-image: url("/img/Fondo-Blog.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#fondo_principal-contactanos{
+    background-image: url("/img/fondo_contactanos.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* estilos para el menu y para el main principal */
+.main_principal{
+	position: relative;
+    width: 100%;
+}
+.navigarion{
+    position: fixed;
+    /* width: 300px; */
+    height: 100%;
+    background-image: url("/img/fondo_menu_800.png");
+    /* background-color: white; */
+    /* border-bottom-right-radius: 60%;
+    border-top-right-radius: 60%; */
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    padding-top: 200px;
+    /* justify-content: center; */
+    
+    flex-direction: column;
+}
+.btn_arrow{
+    background-color: black;
+    border-radius: 50%;
+}
+.navigarion.active{
+    width: 100px;
+}
+.navigarion ul {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    /* margin: auto 0; */
+}
+.navigarion ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigarion ul li:hover{
+    list-style: none;
+	background: url("/img/hover_10.png");
+	background-repeat: no-repeat;
+	/* width: 250px; */
+	padding:0px 0px 0px 0;
+	margin: 0 0px 0 0;
+	/* float: right; */
+    right: 20px;
+	transition: left  2s;
+}
+/* .navigarion ul li:nth-child(1){
+    margin-bottom: 20px;
+} */
+/* .navigarion ul li:nth-child(1):hover{
+    background: transparent;
+} */
+.navigarion ul li a{
+    position: relative;
+    width: 100%;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: #CCCCCC;
+}
+.navigarion ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigarion ul li a .icon .fa{
+    color: #fff;
+    font-size: 24px;
+}
+.navigarion ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.main{
+    /* position: absolute;
+    width: calc(100% - 100px);
+    left: 200px; */
+    /* min-height: 100vh; */
+    width: 900px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+/* .main-index{
+    width: calc(100% - 200px);
+    left: 200px;
+    margin-left: 200px;
+} */
+/* .main.active{
+    width: calc(100% - 60px);
+    left: 60px;
+} */
+.topbar{
+    display: none;
+    width: 100%;
+    height: 60px;
+    padding-bottom:160px;
+}
+.toggle{
+    /* display: none; */
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /* cursor: pointer; */
+}
+.toggle::before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.cardBox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    margin: 0 0 0 100px;
+    /* display: grid;
+    grid-gap:20px; */
+}
+
+.img-carrusel{
+    width: 60%;
+    height: 80vh;
+    margin: 0 auto;
+}
+.cardBox .card{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+/* nosotros */
+.cardBox-nosotros-arriba{
+    display: flex;
+    justify-content: center;
+}
+.nosotros-h1{
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea;
+    color:#ccc;
+    font-size: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.cardBox-nosotros-abajo{
+    display: flex;
+    justify-content: center;
+}
+.img-nosotros-uno{
+    display: flex;
+    align-items: end;
+}
+.img-nosotros-medio{
+    position: absolute;
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -100px;
+    
+    
+}
+.nosotros-texto{
+    width: 40%;
+	/* background-color: #fff; */
+    /* box-shadow: 5px 10px 10px #eaeaea; */
+	font-size: 14px;
+    color:#ccc;
+	text-align: justify;
+    float: left;
+    position: relative;
+    /* padding: 20px 30px 30px 150px; */
+    margin-right: 50px;
+}
+.nosotros-derecha-texto-abajo{
+    width: 400px;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding: 20px 30px 30px 100px;
+}
+.img-nosotros-abajo-uno{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+/* Portafolio */
+.img-portafolio-uno{
+    display: flex;
+    align-items: end;
+    
+}
+.img-portafolio-abajo-uno{
+    width: 50%;
+    /* background-color: #fafafa; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.img-portafolio-arriba-dere{
+    background-color: #fafafa;
+    padding: 0px 0px 60px 30px;
+    box-shadow: 5px 10px 10px #eaeaea;
+}
+.portafolio-img-derecha{
+    display: flex;
+}
+.img-portafolio-uno-arriba{
+    display: flex;
+}
+.img-portafolio-uno-abajo{
+    display: flex;
+}
+.portafolio-abajo-izquierda{
+    width: 40%;	
+	font-size: 14px;
+    color:#ccc;
+	text-align: justify;
+    float: left;
+    position: relative;
+    /* padding: 20px 30px 30px 150px; */
+    /* margin-right: 50px; */
+}
+.portafolio-contenedor-img-der{
+    width: 430px;
+    background-color: #fafafa;
+    box-shadow: 5px 10px 10px #eaeaea;
+    /* padding-left: 116px; */
+    padding-top: 20px;
+}
+.portafolio-contenedor-img-izq{
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding-top: 20px;
+    padding-left: 65px;
+}
+.img-portafolio-izquierda-uno{
+    display: flex;
+}
+.img-portafolio-izquierda-dos{
+    display: flex;
+}
+/* conferencia */
+.img-conferencia-uno{
+    display: flex;
+    align-items: end;
+    /* background-color: #fafafa; */
+}
+.img-conferencia-abajo-uno{
+    width: 50%;
+    /* background-color: #fafafa; */
+    display: flex;
+    justify-content: end;
+}
+.portafolio-conferencia-img-der{
+    height: 210px;
+    /* background-color: #fafafa; */
+    box-shadow: 5px 10px 10px #eaeaea;
+}
+.img-conferencia-arriba-dere{
+    background-color: #fafafa;
+    /* padding: 0px 0px 60px 30px; */
+    box-shadow: 5px 10px 10px #eaeaea;
+}
+.caricatura2{
+	z-index: 1;
+	box-shadow: 5px 10px 10px #eaeaea;
+	max-width:270px;
+	height:210px;
+}
+.iluminacion{
+    max-width:270px;
+    height:210px
+}
+.caricatura3{
+	width: 410px;
+	height: 350px;
+	background-color: #fff;
+	box-shadow: 5px 10px 10px #eaeaea;
+}
+.conferencia-abajo-izquierda{
+    width: 40%;
+}
+.conferencia-contenedor-img-izq{
+    width: 400px;
+    height: 300px;
+}
+/* BLOG */
+.img-blog-arriba-dere{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background-color: #f0efef;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding: 15px;
+}
+.blog-texto-grande{
+    width: 450px;
+    height: 400px;
+}
+/* contactanos */
+.contactanos-formulario{
+    width: 40%;
+	/* background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea; */
+	font-size: 14px;
+    color:#ccc;
+	text-align: justify;
+    float: left;
+    position: relative;
+    /* padding: 20px 30px 30px 150px;
+    margin-right: 50px; */
+}
+.formulario-contactanos-caja{
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 5px 10px 10px #eaeaea;
+    padding: 20px 30px 30px 100px;
+    margin-right: 50px;
+
+}
+
+/* cuadros infinitos */
+.derecha2{
+    width:215px;
+    height:18px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: derecha2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes derecha2{
+    0%   {background-color:#cccccc35; left: 0px; top:470px}
+    100%  {background-color:#cccccc35; left:1700px; top:470px}
+  }
+  .derecha2 img{
+    width: 215px;
+    height: 20px;
+  }
+  .izquierda2{
+    width:210px;
+    height:18px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: izquierda2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes izquierda2{
+    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:1700px}
+    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
+}
+.izquierda2 img{
+    width: 215px;
+    height: 20px;
+}
+.abajo{
+    width:20px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  
+  @keyframes abajo{
+    0%   {background-color:#cccccc35; left:510px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
+  }
+  .abajo img{
+    width: 18px;
+    height: 210px;
+  }
+  .abajo2{
+    width:20px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo2{
+    0%   {background-color:#cccccc35; left:1400px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
+  }
+  .abajo2 img{
+    width: 18px;
+    height: 210px;
+  }
+  .arriba{
+    width:20px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+  }
+  .arriba img{
+    width: 18px;
+    height: 210px;
+  }
+  .arriba2{
+    width:20px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba2;
+    animation-duration:12s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba2{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:1100px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
+  }
+  .arriba2 img{
+    width: 18px;
+    height: 210px;
+  }
+
+/* Media querys para responsive */
+@media(max-width:1500px){
+    /* animacion infinito */
+    .derecha2{
+        width:215px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: derecha2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes derecha2{
+        0%   {background-color:#cccccc35; left:0px; top:470px}
+        100%  {background-color:#cccccc35; left:950px; top:470px}
+      }
+      .izquierda2{
+        width:210px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: izquierda2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes izquierda2{
+        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
+        100%  {background-color:#cccccc35; top:300px; bottom:1400px;left:950px}
+    }
+    .abajo{
+        width:34px;
+        height:210px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo{
+        0%   {background-color:#cccccc35; left:410px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:410px; top:410px; bottom:0px }
+      }
+      .abajo2{
+        width:34px;
+        height:182px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo2{
+        0%   {background-color:#cccccc35; left:1200px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:1200px; top:410px; bottom:0px }
+      }
+      .arriba{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+      }
+      .arriba2{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba2{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+      }
+}
+@media(max-width:1400px) {
+   
+    /* animacion infinito */
+    .derecha2{
+        width:215px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: derecha2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes derecha2{
+        0%   {background-color:#cccccc35; left:0px; top:470px}
+        100%  {background-color:#cccccc35; left:950px; top:470px}
+      }
+      .izquierda2{
+        width:210px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: izquierda2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes izquierda2{
+        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
+        100%  {background-color:#cccccc35; top:300px; bottom:1400px;left:950px}
+    }
+    .abajo{
+        width:34px;
+        height:210px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo{
+        0%   {background-color:#cccccc35; left:410px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:410px; top:410px; bottom:0px }
+      }
+      .abajo2{
+        width:34px;
+        height:182px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo2{
+        0%   {background-color:#cccccc35; left:1200px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:1200px; top:410px; bottom:0px }
+      }
+      .arriba{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+      }
+      .arriba2{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba2{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+      }
+}
+@media(max-width:1200px) {
+    
+    /* animacion infinito */
+    .derecha2{
+        width:215px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: derecha2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes derecha2{
+        0%   {background-color:#cccccc35; left:0px; top:470px}
+        100%  {background-color:#cccccc35; left:800px; top:470px}
+      }
+      .izquierda2{
+        width:210px;
+        height:34px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: izquierda2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes izquierda2{
+        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
+        100%  {background-color:#cccccc35; top:300px; bottom:400px;left:700px}
+    }
+    .abajo{
+        width:34px;
+        height:210px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo{
+        0%   {background-color:#cccccc35; left:310px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:310px; top:410px; bottom:0px }
+      }
+      .abajo2{
+        width:34px;
+        height:182px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: abajo2;
+        animation-duration:9s;
+        animation-iteration-count: infinite
+      }
+      @keyframes abajo2{
+        0%   {background-color:#cccccc35; left:800px; top:0px; bottom:0px}
+        100%  {background-color:#cccccc35; left:800px; top:410px; bottom:0px }
+      }
+      .arriba{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba;
+        animation-duration:7s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+      }
+      .arriba2{
+        width:34px;
+        height:195px;
+        background-color:#FFFFFF20;
+        position: absolute;
+        z-index: 1;
+        animation-name: arriba2;
+        animation-duration:12s;
+        animation-iteration-count: infinite
+      }
+      @keyframes arriba2{
+        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
+        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+      }
+}
+@media (max-width:992px){
+   /* cuadros infinitos */
+.derecha2{
+    display: none;
+    width:215px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: derecha2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes derecha2{
+    0%   {background-color:#cccccc35; left: 0px; top:470px}
+    100%  {background-color:#cccccc35; left:1700px; top:470px}
+  }
+  .izquierda2{
+    display: none;
+    width:210px;
+    height:34px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: izquierda2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes izquierda2{
+    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:1700px}
+    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
+}
+.abajo{
+    display: none;
+    width:34px;
+    height:210px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo{
+    0%   {background-color:#cccccc35; left:510px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
+  }
+  .abajo2{
+    display: none;
+    width:34px;
+    height:182px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: abajo2;
+    animation-duration:9s;
+    animation-iteration-count: infinite
+  }
+  @keyframes abajo2{
+    0%   {background-color:#cccccc35; left:1400px; top:0px; bottom:0px}
+    100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
+  }
+  .arriba{
+    display: none;
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba;
+    animation-duration:7s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+  }
+  .arriba2{
+    display: none;
+    width:34px;
+    height:195px;
+    background-color:#FFFFFF20;
+    position: absolute;
+    z-index: 1;
+    animation-name: arriba2;
+    animation-duration:12s;
+    animation-iteration-count: infinite
+  }
+  @keyframes arriba2{
+    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:1100px}
+    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
+  }
+  .img-carrusel{
+    height: 400px;
+}
+/* .cardBox{
+    margin: 0px;
+} */
+    .topbar{
+        /* display: none; */
+        width: 100%;
+        height: 60px;
+        padding: 0 10px;
+        padding-bottom:160px;
+    }
+    .toggle{
+        /* display: none; */
+        position: relative;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+    .toggle::before{
+        content: '\f0c9';
+        font-family: fontAwesome;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        line-height: 60px;
+        font-size: 24px;
+        text-align: center;
+        color: #CCCCCC;
+    }
+    .navigarion{
+        width: 100px;
+        height: 600px;
+        padding-top: 100px;
+    }
+    .main{
+        width: 600px;
+        /* margin-left: 100px; */
+    }
+    .img-nosotros-medio{
+        width: 600px;
+    }
+    .cardBox{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0;
+    }
+    /* NOSOTROS */
+    .nosotros-h1{
+        width: 200px;
+        height: 180px;
+        font-size: 30px;
+    }
+    .img-nosotros-uno img{
+        width: 150px;
+        height: 110px;
+    }
+    .img-nosotros-medio{
+        width: 550px;
+        margin-top: -75px;
+    }
+    .img-nosotros-medio img{
+        width: 150px;
+    }
+    .img-nosotros-abajo-uno .iluminacion{
+        max-width: 200px;
+        height: 170px;
+    }
+    /* PORTAFOLIO */
+    .img-portafolio-arriba-dere{
+        padding: 0px 0px 15px 15px;
+    }
+    .portafolio-contenedor-img-der{
+        width: 260px;
+    }
+    .img-portafolio-uno-arriba a img {
+        width: 110px;
+    }
+    .img-portafolio-uno-abajo a img {
+        width: 110px;
+    }
+    .portafolio-contenedor-img-izq{
+        width: 295px;
+    height: 210px;
+    padding-left: 30px;
+    }
+    .img-portafolio-izquierda-uno a img {
+        width: 110px;
+    }
+    .img-portafolio-izquierda-dos a img {
+        width: 110px;
+    }
+    /* CONFERENCIA */
+    .caricatura2{
+        max-width: 200px;
+        height: 150px;
+    }
+    .portafolio-conferencia-img-der {
+
+        height: 200px;        
+        /* padding: 30px 45px 0 0; */
+    }
+    .iluminacion{
+        max-width: 200px;
+        height: 150px;
+    }
+    .caricatura3{
+        width: 300px;
+        height: 260px;
+    }
+    /* BLOG */
+    .img-blog-arriba-dere{
+        width: 253px;
+        height: 158px;
+        font-size: 12px;
+    }
+    .img-conferencia-abajo-uno .img-blog-arriba-dere{
+        width: 300px;
+        height: 200px;
+        font-size: 12px;
+    }
+    .blog-texto-grande{
+        width: 300px;
+        height: 352px;
+        font-size: 12px;
+    }
+    .formulario-contactanos-caja{
+        width: 330px;
+        padding: 20px 30px 30px 60px;
+    }
+    /* CONTACTANOS */
+    .formulario-contactanos-caja {
+        width: 260px;
+        padding: 52px 30px 30px 60px;
+    }
+}
+@media (max-width:768px){
+    .img-carrusel{
+        height: 400px;
+    }
+    .cardBox{
+        margin: 0px;
+    }
+    .main{
+        width: 400px;
+    }
+    /* NOSOTROS */
+    .img-nosotros-abajo-uno .iluminacion{
+        max-width: 140px;
+        height: 130px;
+    }
+    .nosotros-derecha-texto-abajo{
+        width: 250px;
+        padding: 50px 20px 20px 20px;
+        font-size: 12px;
+    }
+    /* PORTAFOLIO */
+    .cardBox-nosotros-arriba {
+        align-items: end;
+    }
+    .portafolio-img-derecha{
+        display: block;
+        padding: 0 0 0 70px;
+    }
+    .portafolio-contenedor-img-der {
+        width: 200px;
+    }
+    .img-portafolio-uno-arriba{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .img-portafolio-uno-abajo{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .portafolio-contenedor-img-izq {
+        width: 200px;
+        height: 350px;
+    }
+    .img-portafolio-izquierda-uno {
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .img-portafolio-izquierda-dos{
+        display: block;
+        width: 200px;
+        text-align: center;
+    }
+    .portafolio-img-derecha div img{
+        width: 100px;
+    }
+    /* CONFERENCIA */
+    .caricatura2{
+        max-width: 150px;
+        height: 130px;
+    
+    }
+    .portafolio-conferencia-img-der{
+        /* padding: 24px 0px 0 0; */
+        height: 150px;
+    }
+    .conferencia-contenedor-img-izq{
+        width: 200px;
+        height: 200px;
+    }
+    .caricatura3 {
+        width: 230px;
+        height: 200px;
+    }
+    .img-nosotros-medio{
+        width: 440px;
+    }
+}
+@media (max-width:480px){
+    /* .cardBox{
+        grid-template-columns: repeat(1,1fr);
+    } */
+    .main{
+        width: 350px;
+        height: 100%;
+        margin-top: -60px;
+    }
+    .topbar{
+        display: block;
+        width: 100%;
+        padding: 0;
+
+    }
+    .navigarion{
+        width: 100%;
+        left: -100%;
+        z-index: 1000;
+    }
+    .navigarion.active{
+        width: 25%;
+        left: -25px;
+        background-image: none
+        
+    }
+    .toggle.active{
+        position: fixed;
+        z-index: 10000;
+        right: 0;
+        left: initial;        
+    }
+    .toggle.active::before{
+        color: #ccc;
+    }
+    /* NOSOTROS */
+    .cardBox-nosotros-arriba{
+        display: grid;
+        width: 350px;
+        justify-content: center;
+    }
+    .img-nosotros-medio{
+        width: 350px;
+        position: static;
+        margin: 0;
+    }
+    .cardBox-nosotros-abajo{
+        flex-direction: column;
+        width: 350px;
+        /* height: 420px; */
+        justify-content: center;
+    }
+    .img-nosotros-abajo-uno {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nosotros-texto {
+        width: 200px;
+        height: 100%;
+        font-size: 14px;
+        color: #ccc;
+        display: flex;
+        margin: 0 auto;
+    }
+    .nosotros-derecha-texto-abajo{
+        width: 200px;
+        height: 100%;
+        padding: 10px 10px 10px 10px;
+        font-size: 12px;
+    }
+    .img-nosotros-uno{
+        display: flex;
+        justify-content: center;
+    }
+    .img-nosotros-uno img{
+        width: 200px;
+        height: 150px;
+    
+    }
+    .img-nosotros-medio img {
+        width: 200px;
+    }
+    .img-nosotros-abajo-uno .iluminacion {
+        max-width: 200px;
+        height: 150px;
+    }
+    #fondo_principal-nosotros{
+        height: 100%;
+    }
+    /* PORTAFOLIO */
+    #fondo_principal-portafolio{
+        height: 100%;
+    }
+    .portafolio-img-derecha div img {
+        width: 200px;
+    }
+    .portafolio-img-derecha {
+        display: block;
+        padding: 0;
+    }
+    .img-portafolio-izquierda-uno-dos{
+        flex-direction: column;
+    }
+    .cardBox-nosotros-abajo{
+        align-items: center;
+    }
+    .img-portafolio-abajo-uno {
+        width: 100%;
+        /* background-color: #fafafa; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portafolio-contenedor-img-izq {
+        width: 200px;
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portafolio-abajo-izquierda{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* .img-portafolio-uno-arriba a img {
+        width: 200px;
+    } */
+    /* CONFERENCIA */
+    .caricatura2 {
+        max-width: 200px;
+        height: 130px;
+    }
+    .img-conferencia-uno {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .conferencia-abajo-izquierda {
+        width: 100%;
+        height: 100%;
+    }
+    .conferencia-contenedor-img-izq {
+        width: 350px;
+        margin: 0 auto;
+    }
+    .img-portafolio-izquierda-uno {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .caricatura3 {
+        width: 200px;
+        height: 160px;
+    }
+    #fondo_principal-conferencia{
+        height: 100%;
+    }
+    .portafolio-conferencia-img-der {
+        width: 200px;
+        height: 150px;
+    }
+    .img-conferencia-abajo-uno {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-conferencia-arriba-dere{
+        width: 200px;
+        background-color: #fff;
+    }
+    /* BLOG */
+    .img-conferencia-abajo-uno .img-blog-arriba-dere {
+        width: 200px;
+        height: 100%;
+        font-size: 12px;
+        padding: 5px !important;
+    }
+    .blog-texto-grande {
+        width: 200px;
+        height: 100%;
+        font-size: 12px;
+        padding: 5px !important;
+    }
+    .blog-contenedor-img-izq {
+        width: 200px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .blog-abajo-izquierda{
+        width: 100%;
+        height: 100%;
+    }
+    /* CONTACTANOS */
+    .formulario-contactanos-caja{
+        width: 200px;
+        padding: 15px;
+        margin: 0;
+    }
+    .contactanos-formulario{
+        width: 100%;
+        /* height: 450px; */
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    #fondo_principal-contactanos{
+        height: 100%;
+    }
+}
