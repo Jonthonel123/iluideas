@@ -1,3 +1,11 @@
+@font-face {
+    font-family: abeatbyKaiRegular;
+    src: url('../fonts/abeatbyKaiRegular.otf');
+}
+@font-face {
+    font-family: Gothic;
+    src: url('../fonts/GOTHICBI.TTF');
+}
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +15,7 @@ body{
     width: 100%;
 	margin:0 auto;
 	overflow-x: hidden;
-	font-family: 'Nunito'
+	font-family: abeatbyKaiRegular;
 
 }
 
@@ -64,7 +72,7 @@ body{
 }
 .navigarion{
     position: fixed;
-    /* width: 300px; */
+    width: 205px;
     height: 100%;
     background-image: url("/img/fondo_menu_800.png");
     /* background-color: white; */
@@ -101,12 +109,12 @@ body{
     list-style: none;
 	background: url("/img/hover_10.png");
 	background-repeat: no-repeat;
-	/* width: 250px; */
+	width: 175px;
 	padding:0px 0px 0px 0;
-	margin: 0 0px 0 0;
+	margin: 0 0px 0 0px;
 	/* float: right; */
-    right: 20px;
-	transition: left  2s;
+    right: 10px;
+	/* transition: 2s; */
 }
 /* .navigarion ul li:nth-child(1){
     margin-bottom: 20px;
@@ -137,6 +145,7 @@ body{
 .navigarion ul li a .title{
     position: relative;
     display: block;
+    font-size: 12px;
     padding: 0 10px;
     height: 60px;
     line-height: 60px;
@@ -214,6 +223,7 @@ body{
 .nosotros-h1{
     width: 300px;
     height: 250px;
+    font-family: Gothic;
     background-color: #fff;
     box-shadow: 5px 10px 10px #eaeaea;
     color:#ccc;
@@ -256,8 +266,10 @@ body{
 }
 .nosotros-derecha-texto-abajo{
     width: 400px;
+    font-size: 12px;
     box-shadow: 5px 10px 10px #eaeaea;
     padding: 20px 30px 30px 100px;
+    font-family: 'abeatbykairegular';
 }
 .img-nosotros-abajo-uno{
     width: 50%;
@@ -379,7 +391,7 @@ body{
 }
 .blog-texto-grande{
     width: 450px;
-    height: 400px;
+    height: 330px;
 }
 /* contactanos */
 .contactanos-formulario{
@@ -405,7 +417,7 @@ body{
 
 /* cuadros infinitos */
 .derecha2{
-    width:215px;
+    width:215px !important;
     height:18px;
     background-color:#FFFFFF20;
     position: absolute;
@@ -419,11 +431,11 @@ body{
     100%  {background-color:#cccccc35; left:1700px; top:470px}
   }
   .derecha2 img{
-    width: 215px;
+    width: 215px !important;
     height: 20px;
   }
   .izquierda2{
-    width:210px;
+    width:210px !important;
     height:18px;
     background-color:#FFFFFF20;
     position: absolute;
@@ -437,11 +449,11 @@ body{
     100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
 }
 .izquierda2 img{
-    width: 215px;
+    width: 215px !important;
     height: 20px;
 }
 .abajo{
-    width:20px;
+    width:20px !important;
     height:210px;
     background-color:#FFFFFF20;
     position: absolute;
@@ -456,11 +468,11 @@ body{
     100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
   }
   .abajo img{
-    width: 18px;
+    width: 18px !important;
     height: 210px;
   }
   .abajo2{
-    width:20px;
+    width:20px !important;
     height:210px;
     background-color:#FFFFFF20;
     position: absolute;
@@ -474,11 +486,11 @@ body{
     100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
   }
   .abajo2 img{
-    width: 18px;
+    width: 18px !important;
     height: 210px;
   }
   .arriba{
-    width:20px;
+    width:20px !important;
     height:210px;
     background-color:#FFFFFF20;
     position: absolute;
@@ -492,11 +504,11 @@ body{
     100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
   }
   .arriba img{
-    width: 18px;
+    width: 18px !important;
     height: 210px;
   }
   .arriba2{
-    width:20px;
+    width:20px !important;
     height:210px;
     background-color:#FFFFFF20;
     position: absolute;
@@ -510,7 +522,7 @@ body{
     100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
   }
   .arriba2 img{
-    width: 18px;
+    width: 18px !important;
     height: 210px;
   }
 
@@ -990,7 +1002,7 @@ body{
     }
     .blog-texto-grande{
         width: 300px;
-        height: 352px;
+        height: 390px;
         font-size: 12px;
     }
     .formulario-contactanos-caja{
@@ -1169,6 +1181,10 @@ body{
     .img-nosotros-medio{
         width: 440px;
     }
+    /* BLOG */
+    .blog-texto-grande {
+        height: 390px;
+    }
 }
 @media (max-width:480px){
      /* cuadros infinitos */
@@ -1272,24 +1288,32 @@ body{
 
     }
     .navigarion{
-        width: 100%;
-        left: -100%;
+        /* width: 100%; */
+        left: -5%;
         z-index: 1000;
+        background-image: none;
     }
     .navigarion.active{
-        width: 25%;
-        left: -25px;
+        width: 50%;
+        left: -20px;
         background-image: none
         
     }
     .toggle.active{
         position: fixed;
         z-index: 10000;
-        right: 0;
+        /* right: 0; */
         left: initial;        
     }
     .toggle.active::before{
         color: #ccc;
+    }
+    .cardBox{
+        padding: 30px;
+        margin: 45px 0 0 10px;
+    }
+    .img-carrusel{
+        height: 350px;
     }
     /* NOSOTROS */
     .cardBox-nosotros-arriba{
