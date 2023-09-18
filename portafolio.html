@@ -32,7 +32,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body id="fondo_principal-portafolio">
+  <body id="fondo_principal-portafolio" class="body_fondo">
     <div class="container-fluid">
       <div class="row">
         <div class="derecha2">
@@ -46,10 +46,10 @@
         <div class="arriba"><img src="img/direccion_arriba.png" alt="" /></div>
         <div class="arriba2"><img src="img/direccion_arriba.png" alt="" /></div>
         <div class="main_principal">
-          <div class="topbar">
-            <div class="toggle" onclick="toggleMenu();"></div>
-          </div>
           <div class="navigarion">
+            <div class="topbar">
+              <div class="toggle" onclick="toggleMenu();"></div>
+            </div>
             <div>
               <ul>
                 <li>
@@ -166,6 +166,7 @@
                       data-bs-target="#Modal3"
                       style="cursor: pointer"
                       ><img
+                        class="chocotec"
                         src="img/portafolio_28.png"
                         alt="chocotec"
                         width="150px"
@@ -175,6 +176,7 @@
                       data-bs-target="#Modal4"
                       style="cursor: pointer"
                       ><img
+                        class="expreso"
                         src="img/portafolio_29.png"
                         alt="expreso"
                         width="150px"
@@ -186,6 +188,7 @@
                       data-bs-target="#Modal5"
                       style="cursor: pointer"
                       ><img
+                        class="inkuy"
                         src="img/portafolio_34.png"
                         alt="inkuy"
                         width="150px"
@@ -195,6 +198,7 @@
                       data-bs-target="#Modal6"
                       style="cursor: pointer"
                       ><img
+                        class="activados"
                         src="img/portafolio_35.png"
                         alt="activados"
                         width="150px"
@@ -212,6 +216,7 @@
                       data-bs-target="#Modal7"
                       style="cursor: pointer"
                       ><img
+                        class="mind2"
                         src="img/portafolio_31.png"
                         alt="Mind"
                         width="150px"
@@ -221,6 +226,7 @@
                       data-bs-target="#Modal8"
                       style="cursor: pointer"
                       ><img
+                        class="vankia"
                         src="img/portafolio_32.png"
                         alt="Vanika"
                         width="150px"
@@ -232,6 +238,7 @@
                       data-bs-target="#Modal9"
                       style="cursor: pointer"
                       ><img
+                        class="chocotec2"
                         src="img/portafolio_36.png"
                         alt="chocotec"
                         width="150px"
@@ -241,6 +248,7 @@
                       data-bs-target="#Modal10"
                       style="cursor: pointer"
                       ><img
+                        class="clarita"
                         src="img/portafolio_37.png"
                         alt="clarita"
                         width="150px"
@@ -293,7 +301,11 @@
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="/image/mind.jpg" class="d-block w-100" alt="..." />
+                  <img
+                    src="/image/Papeleria_perusat2.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
                 </div>
                 <!-- <div class="carousel-item">
                 <img src="/image/mind.png" class="d-block w-100" alt="..." />
@@ -553,7 +565,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="/image/expreso.jpg"
+                    src="/image/expreso2.jpg"
                     class="d-block w-100"
                     alt="..."
                   />
@@ -1133,9 +1145,11 @@
         let toggle = document.querySelector(".toggle");
         let navigarion = document.querySelector(".navigarion");
         let main = document.querySelector(".main");
+        let body = document.querySelector(".body_fondo");
         toggle.classList.toggle("active");
         navigarion.classList.toggle("active");
         main.classList.toggle("active");
+        body.classList.toggle("active");
       }
     </script>
     <script

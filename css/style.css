@@ -254,7 +254,9 @@ body{
 }
 .nosotros-texto{
     width: 40%;
-	/* background-color: #fff; */
+	background-color: #fff;
+
+
     /* box-shadow: 5px 10px 10px #eaeaea; */
 	font-size: 14px;
     color:#ccc;
@@ -270,6 +272,7 @@ body{
     box-shadow: 5px 10px 10px #eaeaea;
     padding: 20px 30px 30px 100px;
     font-family: 'abeatbykairegular';
+    background-color: #fff;
 }
 .img-nosotros-abajo-uno{
     width: 50%;
@@ -419,16 +422,16 @@ body{
 .derecha2{
     width:215px !important;
     height:18px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: derecha2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes derecha2{
-    0%   {background-color:#cccccc35; left: 0px; top:470px}
-    100%  {background-color:#cccccc35; left:1700px; top:470px}
+    0%   { left: 0px; top:470px}
+    100%  { left:1700px; top:470px}
   }
   .derecha2 img{
     width: 215px !important;
@@ -437,16 +440,16 @@ body{
   .izquierda2{
     width:210px !important;
     height:18px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: izquierda2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes izquierda2{
-    0%   {background-color:#cccccc35; top:600px; bottom:0px;left:1700px}
-    100%  {background-color:#cccccc35; top:600px; bottom:0px;left:0px}
+    0%   { top:600px; bottom:0px;left:1700px}
+    100%  {top:600px; bottom:0px;left:0px}
 }
 .izquierda2 img{
     width: 215px !important;
@@ -455,17 +458,17 @@ body{
 .abajo{
     width:20px !important;
     height:210px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   
   @keyframes abajo{
-    0%   {background-color:#cccccc35; left:510px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:510px; top:550px; bottom:0px }
+    0%   { left:510px; top:0px; bottom:0px}
+    100%  {left:510px; top:550px; bottom:0px }
   }
   .abajo img{
     width: 18px !important;
@@ -474,16 +477,16 @@ body{
   .abajo2{
     width:20px !important;
     height:210px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes abajo2{
-    0%   {background-color:#cccccc35; left:1400px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:1400px; top:550px; bottom:0px }
+    0%   {left:1400px; top:0px; bottom:0px}
+    100%  {left:1400px; top:550px; bottom:0px }
   }
   .abajo2 img{
     width: 18px !important;
@@ -492,16 +495,16 @@ body{
   .arriba{
     width:20px !important;
     height:210px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba;
     animation-duration:7s;
     animation-iteration-count: infinite
   }
   @keyframes arriba{
-    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:380px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+    0%   { top:550px; bottom:0px;left:380px}
+    100%  { top:0px; bottom:0px;left:380px}
   }
   .arriba img{
     width: 18px !important;
@@ -510,16 +513,16 @@ body{
   .arriba2{
     width:20px !important;
     height:210px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba2;
     animation-duration:12s;
     animation-iteration-count: infinite
   }
   @keyframes arriba2{
-    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:1100px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:1100px}
+    0%   { top:550px; bottom:0px;left:1100px}
+    100%  {top:0px; bottom:0px;left:1100px}
   }
   .arriba2 img{
     width: 18px !important;
@@ -532,87 +535,88 @@ body{
     .derecha2{
         width:215px;
         height:34px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: derecha2;
         animation-duration:9s;
         animation-iteration-count: infinite
       }
       @keyframes derecha2{
-        0%   {background-color:#cccccc35; left:0px; top:470px}
-        100%  {background-color:#cccccc35; left:950px; top:470px}
+        0%   {left:0px; top:470px}
+        100%  {left:950px; top:470px}
       }
       .izquierda2{
         width:210px;
         height:34px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: izquierda2;
         animation-duration:12s;
         animation-iteration-count: infinite
       }
       @keyframes izquierda2{
-        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
-        100%  {background-color:#cccccc35; top:300px; bottom:1400px;left:950px}
+        0%   { top:300px; bottom:110px;left:0px}
+        100%  {top:300px; bottom:1400px;left:950px}
     }
     .abajo{
         width:34px;
         height:210px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: abajo;
         animation-duration:7s;
         animation-iteration-count: infinite
       }
       @keyframes abajo{
-        0%   {background-color:#cccccc35; left:410px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:410px; top:410px; bottom:0px }
+        0%   {bleft:410px; top:0px; bottom:0px}
+        100%  {left:410px; top:410px; bottom:0px }
       }
       .abajo2{
         width:34px;
         height:182px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: abajo2;
         animation-duration:9s;
         animation-iteration-count: infinite
       }
       @keyframes abajo2{
-        0%   {background-color:#cccccc35; left:1200px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:1200px; top:410px; bottom:0px }
+        0%   {left:1200px; top:0px; bottom:0px}
+        100%  { left:1200px; top:410px; bottom:0px }
       }
       .arriba{
         width:34px;
         height:195px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: arriba;
         animation-duration:7s;
         animation-iteration-count: infinite
       }
       @keyframes arriba{
-        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
-        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+        0%   { top:410px; bottom:0px;left:380px}
+        100%  {top:0px; bottom:0px;left:380px}
       }
       .arriba2{
         width:34px;
         height:195px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: arriba2;
         animation-duration:12s;
         animation-iteration-count: infinite
       }
       @keyframes arriba2{
-        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
-        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+        0%   {top:410px; bottom:0px;left:900px}
+        100%  {top:0px; bottom:0px;left:900px}
       }
+      
 }
 @media(max-width:1400px) {
    
@@ -620,87 +624,88 @@ body{
     .derecha2{
         width:215px;
         height:34px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: derecha2;
         animation-duration:9s;
         animation-iteration-count: infinite
       }
       @keyframes derecha2{
-        0%   {background-color:#cccccc35; left:0px; top:470px}
-        100%  {background-color:#cccccc35; left:950px; top:470px}
+        0%   { left:0px; top:470px}
+        100%  { left:950px; top:470px}
       }
       .izquierda2{
         width:210px;
         height:34px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: izquierda2;
         animation-duration:12s;
         animation-iteration-count: infinite
       }
       @keyframes izquierda2{
-        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
-        100%  {background-color:#cccccc35; top:300px; bottom:1400px;left:950px}
+        0%   { top:300px; bottom:110px;left:0px}
+        100%  { top:300px; bottom:1400px;left:950px}
     }
     .abajo{
         width:34px;
         height:210px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: abajo;
         animation-duration:7s;
         animation-iteration-count: infinite
       }
       @keyframes abajo{
-        0%   {background-color:#cccccc35; left:410px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:410px; top:410px; bottom:0px }
+        0%   {left:410px; top:0px; bottom:0px}
+        100%  { left:410px; top:410px; bottom:0px }
       }
       .abajo2{
         width:34px;
         height:182px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: abajo2;
         animation-duration:9s;
         animation-iteration-count: infinite
       }
       @keyframes abajo2{
-        0%   {background-color:#cccccc35; left:1200px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:1200px; top:410px; bottom:0px }
+        0%   { left:1200px; top:0px; bottom:0px}
+        100%  { left:1200px; top:410px; bottom:0px }
       }
       .arriba{
         width:34px;
         height:195px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: arriba;
         animation-duration:7s;
         animation-iteration-count: infinite
       }
       @keyframes arriba{
-        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
-        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+        0%   { top:410px; bottom:0px;left:380px}
+        100%  { top:0px; bottom:0px;left:380px}
       }
       .arriba2{
         width:34px;
         height:195px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: arriba2;
         animation-duration:12s;
         animation-iteration-count: infinite
       }
       @keyframes arriba2{
-        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
-        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+        0%   {top:410px; bottom:0px;left:900px}
+        100%  { top:0px; bottom:0px;left:900px}
       }
+      
 }
 @media(max-width:1200px) {
     
@@ -708,176 +713,175 @@ body{
     .derecha2{
         width:215px;
         height:34px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: derecha2;
         animation-duration:9s;
         animation-iteration-count: infinite
       }
       @keyframes derecha2{
-        0%   {background-color:#cccccc35; left:0px; top:470px}
-        100%  {background-color:#cccccc35; left:800px; top:470px}
+        0%   { left:0px; top:470px}
+        100%  { left:800px; top:470px}
       }
       .izquierda2{
         width:210px;
         height:34px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: izquierda2;
         animation-duration:9s;
         animation-iteration-count: infinite
       }
       @keyframes izquierda2{
-        0%   {background-color:#cccccc35; top:300px; bottom:110px;left:0px}
-        100%  {background-color:#cccccc35; top:300px; bottom:400px;left:700px}
+        0%   {top:300px; bottom:110px;left:0px}
+        100%  { top:300px; bottom:400px;left:700px}
     }
     .abajo{
         width:34px;
         height:210px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: abajo;
         animation-duration:7s;
         animation-iteration-count: infinite
       }
       @keyframes abajo{
-        0%   {background-color:#cccccc35; left:310px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:310px; top:410px; bottom:0px }
+        0%   {left:310px; top:0px; bottom:0px}
+        100%  { left:310px; top:410px; bottom:0px }
       }
       .abajo2{
         width:34px;
         height:182px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: abajo2;
         animation-duration:9s;
         animation-iteration-count: infinite
       }
       @keyframes abajo2{
-        0%   {background-color:#cccccc35; left:800px; top:0px; bottom:0px}
-        100%  {background-color:#cccccc35; left:800px; top:410px; bottom:0px }
+        0%   {left:800px; top:0px; bottom:0px}
+        100%  {left:800px; top:410px; bottom:0px }
       }
       .arriba{
         width:34px;
         height:195px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: arriba;
         animation-duration:7s;
         animation-iteration-count: infinite
       }
       @keyframes arriba{
-        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:380px}
-        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+        0%   {top:410px; bottom:0px;left:380px}
+        100%  { top:0px; bottom:0px;left:380px}
       }
       .arriba2{
         width:34px;
         height:195px;
-        background-color:#FFFFFF20;
+        /* background-color:#FFFFFF20; */
         position: absolute;
-        z-index: 1;
+        z-index: 0;
         animation-name: arriba2;
         animation-duration:12s;
         animation-iteration-count: infinite
       }
       @keyframes arriba2{
-        0%   {background-color:#cccccc35; top:410px; bottom:0px;left:900px}
-        100%  {background-color:#cccccc35; top:0px; bottom:0px;left:900px}
+        0%   {top:410px; bottom:0px;left:900px}
+        100%  { top:0px; bottom:0px;left:900px}
       }
+      
 }
 @media (max-width:992px){
    /* cuadros infinitos */
 .derecha2{
     width:215px;
     height:34px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: derecha2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes derecha2{
-    0%   {background-color:#cccccc35; left: 0px; top:210px}
-    100%  {background-color:#cccccc35; left:680px; top:210px}
+    0%   {left: 0px; top:210px}
+    100%  {left:680px; top:210px}
   }
   .izquierda2{
     width:210px;
     height:34px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: izquierda2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes izquierda2{
-    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:700px}
-    100%  {background-color:#cccccc35; top:550px; bottom:0px;left:0px}
+    0%   {top:550px; bottom:0px;left:700px}
+    100%  { top:550px; bottom:0px;left:0px}
 }
 .abajo{
     width:34px;
     height:210px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo;
     animation-duration:7s;
     animation-iteration-count: infinite
   }
   @keyframes abajo{
-    0%   {background-color:#cccccc35; left:210px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:210px; top:400px; bottom:0px }
+    0%   {left:210px; top:0px; bottom:0px}
+    100%  { left:210px; top:400px; bottom:0px }
   }
   .abajo2{
     width:34px;
     height:182px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes abajo2{
-    0%   {background-color:#cccccc35; left:600px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:600px; top:400px; bottom:0px }
+    0%   {left:600px; top:0px; bottom:0px}
+    100%  { left:600px; top:400px; bottom:0px }
   }
   .arriba{
     width:34px;
     height:195px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba;
     animation-duration:7s;
     animation-iteration-count: infinite
   }
   @keyframes arriba{
-    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:380px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+    0%   { top:400px; bottom:0px;left:380px}
+    100%  { top:0px; bottom:0px;left:380px}
   }
   .arriba2{
     width:34px;
     height:195px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba2;
     animation-duration:12s;
     animation-iteration-count: infinite
   }
   @keyframes arriba2{
-    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:700px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:700px}
+    0%   {top:400px; bottom:0px;left:700px}
+    100%  {top:0px; bottom:0px;left:700px}
   }
-
-
 
   .img-carrusel{
     height: 400px;
@@ -885,36 +889,47 @@ body{
 /* .cardBox{
     margin: 0px;
 } */
-    .topbar{
-        /* display: none; */
-        width: 100%;
-        height: 60px;
-        padding: 0 10px;
-        padding-bottom:160px;
-    }
-    .toggle{
-        /* display: none; */
-        position: relative;
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-    }
-    .toggle::before{
-        content: '\f0c9';
-        font-family: fontAwesome;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        line-height: 60px;
-        font-size: 24px;
-        text-align: center;
-        color: #CCCCCC;
-    }
-    .navigarion{
-        width: 100px;
-        height: 600px;
-        padding-top: 100px;
-    }
+
+.topbar{
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.navigarion{
+    width: 100px;
+    left: -2%;
+    z-index: 1000;
+    background-image: none;
+    padding-top: 0;
+}
+.navigarion.active{
+    width: 30%;
+    height: 100%;
+    left: -20px;
+    background-color: #fff;       
+    
+}
+.body_fondo.active{
+    width: 100%;
+    height: 100%;
+    /* background-image: none !important; */
+    background-image: url("/img/fondo_oscuro/fondo_portada.jpg") !important;
+}
+.toggle.active{
+    position: fixed;
+    z-index: 10000;
+    /* right: 0; */
+    left: initial;        
+}
+.toggle::before{
+    color: #ccc;
+}
+.toggle.active::before{
+    color: #ccc;
+}
+    
     .main{
         width: 600px;
         /* margin-left: 100px; */
@@ -946,6 +961,9 @@ body{
     .img-nosotros-abajo-uno .iluminacion{
         max-width: 200px;
         height: 170px;
+    }
+    .nosotros-derecha-texto-abajo{
+        background-color: #fff;
     }
     /* PORTAFOLIO */
     .img-portafolio-arriba-dere{
@@ -1020,88 +1038,125 @@ body{
    .derecha2{
     width:215px;
     height:34px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: derecha2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes derecha2{
-    0%   {background-color:#cccccc35; left: 0px; top:210px}
-    100%  {background-color:#cccccc35; left:400px; top:210px}
+    0%   { left: 0px; top:210px}
+    100%  { left:400px; top:210px}
   }
   .izquierda2{
     width:210px;
     height:34px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: izquierda2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes izquierda2{
-    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:400px}
-    100%  {background-color:#cccccc35; top:550px; bottom:0px;left:0px}
+    0%   { top:550px; bottom:0px;left:400px}
+    100%  { top:550px; bottom:0px;left:0px}
 }
 .abajo{
     width:34px;
     height:210px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo;
     animation-duration:7s;
     animation-iteration-count: infinite
   }
   @keyframes abajo{
-    0%   {background-color:#cccccc35; left:210px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:210px; top:400px; bottom:0px }
+    0%   {left:210px; top:0px; bottom:0px}
+    100%  {left:210px; top:400px; bottom:0px }
   }
   .abajo2{
     width:34px;
     height:182px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes abajo2{
-    0%   {background-color:#cccccc35; left:500px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:500px; top:400px; bottom:0px }
+    0%   { left:500px; top:0px; bottom:0px}
+    100%  {left:500px; top:400px; bottom:0px }
   }
   .arriba{
     width:34px;
     height:195px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba;
     animation-duration:7s;
     animation-iteration-count: infinite
   }
   @keyframes arriba{
-    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:380px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:380px}
+    0%   { top:400px; bottom:0px;left:380px}
+    100%  { top:0px; bottom:0px;left:380px}
   }
   .arriba2{
     width:34px;
     height:195px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba2;
     animation-duration:12s;
     animation-iteration-count: infinite
   }
   @keyframes arriba2{
-    0%   {background-color:#cccccc35; top:400px; bottom:0px;left:500px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:500px}
+    0%   { top:400px; bottom:0px;left:500px}
+    100%  { top:0px; bottom:0px;left:500px}
   }
 /* fin */
+
+
+.topbar{
+    display: block;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.navigarion{
+    /* width: 100%; */
+    left: -3%;
+    z-index: 1000;
+    background-image: none;
+    padding-top: 0;
+}
+.navigarion.active{
+    width: 35%;
+    height: 100%;
+    left: -20px;
+    background-color: #fff;       
+    
+}
+.body_fondo.active{
+    background-image: url("/img/fondo_oscuro/fondo_portada.jpg") !important;
+    /* background-color: #0000005e; */
+}
+.toggle.active{
+    position: fixed;
+    z-index: 10000;
+    /* right: 0; */
+    left: initial;        
+}
+.toggle.active::before{
+    color: #ccc;
+}
+
 
     .img-carrusel{
         height: 400px;
@@ -1121,6 +1176,7 @@ body{
         width: 250px;
         padding: 50px 20px 20px 20px;
         font-size: 12px;
+        background-color: #fff;
     }
     /* PORTAFOLIO */
     .cardBox-nosotros-arriba {
@@ -1191,86 +1247,86 @@ body{
    .derecha2{
     width:215px;
     height:34px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: derecha2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes derecha2{
-    0%   {background-color:#cccccc35; left: 0px; top:210px}
-    100%  {background-color:#cccccc35; left:170px; top:210px}
+    0%   { left: 0px; top:210px}
+    100%  {left:170px; top:210px}
   }
   .izquierda2{
     width:210px;
     height:34px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: izquierda2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes izquierda2{
-    0%   {background-color:#cccccc35; top:550px; bottom:0px;left:170px}
-    100%  {background-color:#cccccc35; top:550px; bottom:0px;left:0px}
+    0%   {top:550px; bottom:0px;left:170px}
+    100%  {top:550px; bottom:0px;left:0px}
 }
 .abajo{
     width:34px;
     height:210px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo;
     animation-duration:7s;
     animation-iteration-count: infinite
   }
   @keyframes abajo{
-    0%   {background-color:#cccccc35; left:80px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:80px; top:800px; bottom:0px }
+    0%   {left:80px; top:0px; bottom:0px}
+    100%  {left:80px; top:800px; bottom:0px }
   }
   .abajo2{
     width:34px;
     height:182px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: abajo2;
     animation-duration:9s;
     animation-iteration-count: infinite
   }
   @keyframes abajo2{
-    0%   {background-color:#cccccc35; left:300px; top:0px; bottom:0px}
-    100%  {background-color:#cccccc35; left:300px; top:800px; bottom:0px }
+    0%   {left:300px; top:0px; bottom:0px}
+    100%  { left:300px; top:800px; bottom:0px }
   }
   .arriba{
     width:34px;
     height:195px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba;
     animation-duration:7s;
     animation-iteration-count: infinite
   }
   @keyframes arriba{
-    0%   {background-color:#cccccc35; top:800px; bottom:0px;left:200px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:200px}
+    0%   { top:800px; bottom:0px;left:200px}
+    100%  { top:0px; bottom:0px;left:200px}
   }
   .arriba2{
     width:34px;
     height:195px;
-    background-color:#FFFFFF20;
+    /* background-color:#FFFFFF20; */
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     animation-name: arriba2;
     animation-duration:12s;
     animation-iteration-count: infinite
   }
   @keyframes arriba2{
-    0%   {background-color:#cccccc35; top:800px; bottom:0px;left:360px}
-    100%  {background-color:#cccccc35; top:0px; bottom:0px;left:360px}
+    0%   {top:800px; bottom:0px;left:360px}
+    100%  {top:0px; bottom:0px;left:360px}
   }
 /* fin */
     /* .cardBox{
@@ -1279,25 +1335,32 @@ body{
     .main{
         width: 350px;
         height: 100%;
-        margin-top: -60px;
+        /* margin-top: -60px; */
     }
     .topbar{
         display: block;
         width: 100%;
         padding: 0;
-
+        text-align: center;
+        margin-bottom: 80px;
     }
     .navigarion{
         /* width: 100%; */
         left: -5%;
         z-index: 1000;
         background-image: none;
+        padding-top: 0;
     }
     .navigarion.active{
         width: 50%;
+        height: 100%;
         left: -20px;
-        background-image: none
+        background-color: #fff;       
         
+    }
+    .body_fondo.active{
+        background-image: url("/img/fondo_oscuro/fondo_portada.jpg") !important;
+        /* background-color: #0000005e; */
     }
     .toggle.active{
         position: fixed;
@@ -1406,6 +1469,18 @@ body{
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+    .chocotec{
+        margin-right: 20px;
+    }
+    .inkuy{
+        margin-right: 20px;
+    }
+    .mind2{
+        margin-right: 20px;
+    }
+    .chocotec2{
+        margin-right: 20px;
     }
     /* .img-portafolio-uno-arriba a img {
         width: 200px;

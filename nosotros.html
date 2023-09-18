@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body id="fondo_principal-nosotros">
+  <body id="fondo_principal-nosotros" class="body_fondo">
     <div class="container-fluid">
       <div class="row">
         <div class="derecha2">
@@ -45,10 +45,10 @@
         <div class="arriba"><img src="img/direccion_arriba.png" alt="" /></div>
         <div class="arriba2"><img src="img/direccion_arriba.png" alt="" /></div>
         <div class="main_principal">
-          <div class="topbar">
-            <div class="toggle" onclick="toggleMenu();"></div>
-          </div>
           <div class="navigarion">
+            <div class="topbar">
+              <div class="toggle" onclick="toggleMenu();"></div>
+            </div>
             <div>
               <ul>
                 <li>
@@ -177,9 +177,11 @@
         let toggle = document.querySelector(".toggle");
         let navigarion = document.querySelector(".navigarion");
         let main = document.querySelector(".main");
+        let body = document.querySelector(".body_fondo");
         toggle.classList.toggle("active");
         navigarion.classList.toggle("active");
         main.classList.toggle("active");
+        body.classList.toggle("active");
       }
     </script>
     <script
