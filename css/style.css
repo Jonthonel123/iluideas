@@ -75,16 +75,12 @@ body{
     width: 205px;
     height: 100%;
     background-image: url("/img/fondo_menu_800.png");
-    /* background-color: white; */
-    /* border-bottom-right-radius: 60%;
-    border-top-right-radius: 60%; */
     transition: 0.5s;
     overflow: hidden;
     display: flex;
     padding-top: 200px;
-    /* justify-content: center; */
-    
     flex-direction: column;
+    margin-left: -12px;
 }
 .btn_arrow{
     background-color: black;
@@ -902,6 +898,8 @@ body{
     left: -2%;
     z-index: 1000;
     background-image: none;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(189 189 189 / 20%);
     padding-top: 0;
 }
 .navigarion.active{
@@ -911,12 +909,11 @@ body{
     background-color: #fff;       
     
 }
-.body_fondo.active{
+/* .body_fondo.active{
     width: 100%;
     height: 100%;
-    /* background-image: none !important; */
     background-image: url("/img/fondo_oscuro/fondo_portada.jpg") !important;
-}
+} */
 .toggle.active{
     position: fixed;
     z-index: 10000;
@@ -1143,10 +1140,9 @@ body{
     background-color: #fff;       
     
 }
-.body_fondo.active{
+/* .body_fondo.active{
     background-image: url("/img/fondo_oscuro/fondo_portada.jpg") !important;
-    /* background-color: #0000005e; */
-}
+} */
 .toggle.active{
     position: fixed;
     z-index: 10000;
@@ -1358,10 +1354,10 @@ body{
         background-color: #fff;       
         
     }
-    .body_fondo.active{
+    /* .body_fondo.active{
         background-image: url("/img/fondo_oscuro/fondo_portada.jpg") !important;
-        /* background-color: #0000005e; */
-    }
+        
+    } */
     .toggle.active{
         position: fixed;
         z-index: 10000;
